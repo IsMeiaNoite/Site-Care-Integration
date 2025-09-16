@@ -1,0 +1,187 @@
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8" /><!-- Declara o conjunto de caracteres para garantir acentuação correta -->
+<meta name="viewport" content="width=device-width, initial-scale=1" /><!-- Meta viewport para responsividade em dispositivos móveis -->
+<title>Care Integration - Início</title><!-- Título exibido na aba do navegador -->
+<link rel="stylesheet" href="styles.css" /><!-- Link para o arquivo CSS principal. Mantemos CSS separado para organização -->
+</head>
+
+<body>
+<header class="site-header"><!-- Cabeçalho fixo do site. A classe .site-header tem position:fixed no CSS para fixá-lo no topo. -->
+<div class="container"><!-- Logo: usamos um <a> para tornar a logo clicável e levar ao index.html -->
+<a class="logo" href="index.html">
+<!--
+Imagem da logo. A classe .logo-img controla tamanho e proporção via CSS.
+- src: caminho relativo para o arquivo da imagem (logosfundo.png).
+- alt: texto alternativo para acessibilidade.
+-->
+<img src="imagem/logosfundo.png" alt="Logo Care Integration" class="logo-img">
+</a>
+
+
+<!-- Navegação principal do site. Cada <a> aponta para uma página separada. -->
+<nav class="nav" id="nav">
+<a href="index.html">Início</a>
+<a href="servicos.html">Serviços</a>
+<a href="quemsomos.html">Empresa</a>
+<a href="trabalheconosco.html">Contato</a>
+</nav>
+
+
+<!-- Botão que aparece em telas pequenas para abrir/fechar o menu móvel.
+O JavaScript adiciona a funcionalidade de toggle. -->
+<button class="nav-toggle" id="navToggle" aria-label="Abrir menu">☰</button>
+</div>
+</header>
+
+<!--Video da pagina -->>
+<div class="video-container">
+  <video autoplay muted loop playsinline>
+    <source src="imagem/videos/videodoinicio.mp4" type="video/mp4">
+    Seu navegador não suporta vídeos HTML5.
+  </video>
+  
+  <!-- Camada de cor sobre o vídeo -->
+  <div class="video-overlay"></div>
+</div>
+
+
+<!-- Conteúdo principal da página -->
+<main>
+<div>
+<div class="iniciocuidados">
+<div class="card">
+    <img src="imagem/inicio/Cuidados Domiciliar T.png" alt="Cuidados domiciliar"
+     onmouseover="this.src='imagem/inicio/Cuidados Domiciliar T A.png'"
+     onmouseout="this.src='imagem/inicio/Cuidados Domiciliar T.png'"
+    >
+</div>
+
+<div class="card">
+    <img src="imagem/inicio/Home Care T.png" alt="Home Care"
+     onmouseover="this.src='imagem/inicio/Home Care T A.png'"
+     onmouseout="this.src='imagem/inicio/Home Care T.png'"
+    >
+</div>
+
+<div class="card">
+    <img src="imagem/inicio/Acompanhamento Hospitalar T.png" alt="Acompanhamento Hospitalar"
+     onmouseover="this.src='imagem/inicio/Acompanhamento Hospitalar T A.png'"
+     onmouseout="this.src='imagem/inicio/Acompanhamento Hospitalar T.png'"
+    >
+</div>
+</div>
+
+
+
+
+<section class="hero"><!-- Seção hero: destaque inicial com chamada para ação -->
+<div class="container hero-inner"><!-- .container centraliza e controla largura máxima do conteúdo -->
+<div style="display: flex; align-items: center; gap: 20px;">
+<!-- Título principal com span para destacar uma palavra -->
+ <img src="imagem/logosfundo.png" alt="Logo Care Integration" class="logopagina">
+</a>
+<h2>Cuidar é um ato de amor.<br/>
+<span class="accent">
+    Quando a vida pede cuidado, nós entregamos amor.
+</span></h2></div>
+<h2><p> 
+    Na Care Integration, oferecemos serviços de home care, 
+    acompanhamento hospitalar e cuidados domiciliar, sempre com respeito, 
+    carinho e dedicação.
+</p></h2>
+<div class="hero-cta">
+<!-- CTAs levam a outras páginas internas -->
+<a class="btn" href="https://wa.me/5511993164968">Fale Conosco</a>
+<a class="btn btn-ghost" href="trabalheconosco.html">Solicite um Orçamento</a>
+</div>
+
+
+<!--Banner no meio da pagina-->
+<div><p>
+<img src="imagem/Banner inicio.jpg" alt="Cuidados domiciliar" class="bannerinicio">
+</p></div>
+
+
+<!--Tipos de atendimentos-->
+<div >
+  <img src="imagem/inicio/Missão.png" alt="Missão" class="infos">
+  <img src="imagem/inicio/Visão.png" alt="Visão" class="infos">
+  <img src="imagem/inicio/Valores.png" alt="Valores" class="infos">
+  <a href="quemsomos.html" class="botaoquemsomos botaoquemsomos-ghost">Quem somos ?</a>
+</div>
+
+
+<script src="script.js"></script>
+</section>
+
+<script src="script.js"></script>
+
+<!--------------------------------------------------------
+  ===== INFORMAÇÕES DA EMPRESA NO FINAL DA PAGINA  ===== 
+---------------------------------------------------------->
+
+<footer class="footer">
+  <div class="footer-container">
+    
+    <!-- Coluna 1: Logo e Descrição -->
+    <div class="footer-col">
+      <img src="imagem/logosfundo.png" alt="Logo Care Integration" class="footer-logo">
+      <p>Serviço domiciliar especializado no cuidado de idosos.</p>
+      <p><strong>Siga-nos nas redes sociais:</strong></p>
+      <div class="footer-social">
+        <a href="#"><img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/facebook.svg" alt="Facebook"></a>
+        <a href="#"><img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/instagram.svg" alt="Instagram"></a>
+        <a href="#"><img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/youtube.svg" alt="YouTube"></a>
+        <a href="#"><img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/linkedin.svg" alt="Linkedin"></a>
+      </div>
+    </div>
+
+   <div class="footer-container2">
+    <!-- Coluna 2: Endereço e Horários -->
+    <div class="footer-col">
+      <h4>Endereço</h4>
+      <p>Rua Coronel Oscar Porto, 736 - Sl. 95<br>
+      Paraíso, São Paulo - SP, 04003-003</p>
+
+      <h4>Horários</h4>
+      <p>Segunda a Domingo: 8h às 18h</p>
+    </div>
+
+    <!-- Coluna 3: Contatos -->
+    <div class="footer-col">
+      <h4>Contatos</h4>
+      <p>📧 <a href="mailto:homecareintegration@gmail.com">homecareintegration@gmail.com</a></p>
+      <p>📞 (11) 99316-4968</p>
+      <p>📞 (11) 3717-9108</p>
+      <p>📞 (11) 3590-0433</p>
+    </div>
+  </div>
+
+  <div class="footer-bottom">
+    <p>© 2025 Care Integration | O Cadastro Nacional de Estabelecimentos de Saúde</p>
+  </div>
+</footer>
+
+<!-- ===== RODAPE DA PAGINA  ===== -->
+<!-- Rodapé simples com o ano dinâmico inserido via JavaScript -->
+<footer class="site-footer">
+<div class="container">
+<p>© <span id="year"></span>  2025 Care Integration | O Cadastro Nacional de Estabelecimentos de Saúde</p>
+</div>
+</footer>
+
+
+<!-- Script principal que adiciona interatividade (toggle do menu e envio do formulário) -->
+<script src="script.js"></script>
+</body>
+</html>
+
+    <!--Botão do whatsapp fixo na tela-->>
+    <a href="https://wa.me/5511993164968" target="_blank" class="whatsapp-btn" title="Falar com a equipe">
+        <img src="imagem/imagemwhatsapp.png" alt="WhatsApp" class="whatsapp-icon">
+        <span class="whatsapp-tooltip">Deseja falar com a equipe?</span>
+    </a>
+
+
+
